@@ -18,7 +18,7 @@ def weather():
         city = request.form['city']
     else:
         #for default name arequipa
-        city = 'arequipa'
+        city = 'lima'
 
     # source contain json data from api
     try:
