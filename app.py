@@ -7,6 +7,7 @@ import urllib.request
 from flask_cors import CORS
 
 app = Flask(__name__)
+
 def tocelcius(temp):
     return str(round(float(temp) - 273.16,2))
 
@@ -39,6 +40,8 @@ def weather():
         "cityname":str(city),
     }
     return render_template('index.html',data=data)
+
+ # app = create_app()
 
 
 cors = CORS(app, supports_credentials=True)
